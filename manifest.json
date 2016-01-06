@@ -3,7 +3,7 @@
 
   "name": "Undead",
   "description": "This extension removes any details of people's deaths from Wikipedia",
-  "version": "1.0",
+  "version": "1.1",
 
   "icons": { "16": "daisy_16.png",
            "48": "daisy_48.png",
@@ -12,7 +12,8 @@
   "content_scripts": [
     {
       "matches": ["https://en.wikipedia.org/*"],
-      "js": ["jquery-2.1.4.min.js", "undead.js"]
+      "js": ["jquery-2.1.4.min.js", "undead.js"],
+      "run_at": "document_end"
     }
   ]
 }
